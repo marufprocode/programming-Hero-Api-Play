@@ -1,6 +1,6 @@
 const loadData = async () => {
     try{
-        const res = await fetch('http://openapi.programming-hero.com/api/course/curriculum');
+        const res = await fetch('https://openapi.programming-hero.com/api/course/curriculum');
         const data = await res.json();
         displayData(data.data);
     }
