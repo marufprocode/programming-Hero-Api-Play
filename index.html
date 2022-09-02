@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Hero Api</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./Bootstrap/bootstrap.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-primary bg-primary">
+            <div class="container">
+              <a class="navbar-brand" href="#"><img src="./images/logo.png" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 menu-sec">
+                  <li class="nav-item me-3">
+                    <a class="nav-link active text-light" aria-current="page" href="#">Support</a>
+                  </li>
+                  <li class="nav-item me-3">
+                    <a class="nav-link text-light" href="#">Blog</a>
+                  </li>
+                  <li class="nav-item me-3">
+                    <a class="nav-link text-light" href="#">My Classes</a>
+                  </li>
+                  <li class="nav-item me-3">
+                    <button type="button" class="btn btn-primary position-relative">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                            <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
+                          </svg>
+                        <span class="position-absolute top-0 start-50  translate-start badge rounded-pill bg-danger">
+                          0+
+                          <span class="visually-hidden">unread messages</span>
+                        </span>
+                      </button>
+                  </li>
+                  <li class="nav-item me-3">
+                    <button type="button" class="btn btn-primary position-relative">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-bag-check" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                            <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+                          </svg>
+                        <span class="position-absolute top-0 start-50  translate-start badge rounded-pill bg-danger">
+                          0+
+                          <span class="visually-hidden">unread messages</span>
+                        </span>
+                      </button>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-person-circle" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                          </svg>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <main class="container">
+        <header class="row my-3">
+            <div class="col-md-8"><h5>Complete Web Development Course With Jhankar Mahbub</h5></div>
+            <div class="col-md-4 d-flex justify-content-between">
+                <div><h5>Course content</h5></div>
+                <div><h5>Progress</h4></div>
+            </div>
+        </header>
+        <section class="row">
+            <section class="col-md-8">
+                <img alt="" src="./images/kv.png" class="w-100 new-image" id="milestone-image">
+            </section>
+            <aside class="col-md-4">
+                <!-- Accordion Starts  -->
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                   <!--  <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Accordion Item #1
+                          </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                        </div>
+                      </div> -->
+                    
+
+
+                  </div>
+            </aside>
+        </section>
+    </main>
+
+    <script src="./Bootstrap/bootstrap.min.js"></script>
+    <script src="./JS/data.js"></script>
+</body>
+</html>
